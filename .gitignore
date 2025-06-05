@@ -1,0 +1,133 @@
+# ========================
+# OS-Specific
+# ========================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# ========================
+# Node.js
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.env
+.env.local
+.env.*.local
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+*.egg
+.Python
+pip-log.txt
+build/
+develop-eggs/
+dist/
+.eggs/
+*.sqlite3
+venv/
+ENV/
+env/
+
+# ========================
+# PHP (General)
+# ========================
+*.log
+vendor/
+composer.lock
+composer.phar
+.env
+.phpunit.result.cache
+
+# ========================
+# CodeIgniter
+# ========================
+application/logs/
+application/cache/
+.env
+
+# ========================
+# CakePHP
+# ========================
+tmp/*
+logs/*
+config/app_local.php
+webroot/img/cake.icon.png
+
+# ========================
+# Angular
+# ========================
+.angular/
+.angular-cache/
+dist/
+out-tsc/
+node_modules/
+src/environments/environment*.ts
+
+# ========================
+# Frontend Assets (Optional)
+# ========================
+*.map
+.sass-cache/
+.cache/
+*.min.js
+*.min.css
+
+# ========================
+# Editors & IDEs
+# ========================
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ========================
+# Logs and Misc
+# ========================
+*.log
+*.bak
+*.tmp
+*.swp
+
+# ========================
+# Backup files
+# ========================
+*.bak
+*.old
+*.orig
+
+# ========================
+# Uploads or Generated Files
+# ========================
+uploads/
+files/
+
+# ========================
+# Database Dumps
+# ========================
+*.sql
+*.sqlite
+*.sqlite3
+
+# ========================
+# Testing & Coverage
+# ========================
+coverage/
+coverage.*
+.nyc_output/
