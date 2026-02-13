@@ -1,0 +1,8 @@
+1. color (variable)✅
+    - primary (to show importance)
+    - secondary
+    - lighBg
+    - primaryBg
+2. font : googlefonts ✅
+
+3. layout (HTML , placing)

@@ -1,0 +1,140 @@
+#hero{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 95%;
+    margin: 10px auto;
+    position: relative;
+}
+#hero nav > *{
+    /* border: 2px solid black; */
+}
+
+/* nav drop down */
+
+
+#hero ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#hero ul li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    position: relative;
+    z-index: 10;
+   
+}
+
+nav i{
+    /* height: 20px; */
+    /* width: 20px; */
+    transform: scale(1.5) rotate(0deg);
+    font-size: 25px; 
+    margin-bottom: -5px;
+    transition: 0.4s all ease-in-out;
+}
+
+#hero ul li a:hover i{
+    /* background-color: red; */
+    transform: scale(1.5) rotate(180deg);
+}
+#hero ul li a:hover .drop{
+    bottom: -110px;
+    opacity: 1;
+
+}
+
+
+.drop{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 20px;
+    transition: 0.4s all ease-in-out;
+    opacity: 0;
+    
+}
+
+#navLogo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* heroHeadings */
+.heroHeadings{
+    margin-top: 50px;
+}
+.heroHeadings h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 100;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+}
+
+
+/* floating-cont */
+.floating-cont{
+    border: 2px solid red;
+    height: 100%;
+    position: relative;
+}
+
+.floating-cont > *{
+    border: 2px solid black;
+    width: 200px;
+    position: absolute;
+    opacity: 0;
+}
+
+.floatingPara{
+    opacity: 1;
+    width: 300px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
+.floating-play-btn{
+    opacity: 1;
+    top: 40%;
+    left: 7%;
+}
+
+.floating-customers{
+    opacity: 1;
+    bottom: 20px;
+    left: 20px;
+}
+
+.floating-arrow{
+    opacity: 1;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    right: 30%;
+}
+
+.floating-updates{
+    opacity: 1;
+    right: 20%;
+    bottom: 30%;
+}

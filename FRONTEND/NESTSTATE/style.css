@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap');
+
+
+:root{
+    --primary:#080d11;
+    --secondary:whitesmoke;
+    --lightBg:#062a38;
+    --darkBg:#053543;
+    --round:20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+body{
+    /* padding: 0 10px; */
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Patua One", serif;
+}
+
+section{
+    height: 100vh;
+    border: 2px solid black;
+}
