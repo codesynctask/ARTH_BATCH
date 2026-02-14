@@ -1,33 +1,76 @@
-#hero{
+#hero {
     /* background-color: red; */
     display: flex;
     flex-direction: column;
 }
 
-nav{
+nav {
     /* border: 3px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     width: 95%;
-    margin: 10px auto;
-    position: relative;
+    margin: 10px ;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    transition: 0.2s padding ease-in;
 }
-#hero nav > *{
+
+nav:hover {
+    padding-bottom: 25px;
+}
+
+#hero nav>* {
     /* border: 2px solid black; */
+}
+
+
+.btn-nav-cont {
+    position: relative;
+    width: 230px;
+}
+
+nav button {
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: var(--round);
+    background-color: white;
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+nav button:hover+i {
+    right: -15px;
+
+}
+
+nav button+i {
+    /* background-color: red; */
+    position: relative;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    padding: 10px;
+    right: 0px;
+    transition: 0.2s right ease-in;
 }
 
 /* nav drop down */
 
 
-#hero ul{
+#hero ul {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-#hero ul li a{
+#hero ul li a {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -35,30 +78,31 @@ nav{
     height: 25px;
     position: relative;
     z-index: 10;
-   
+
 }
 
-nav i{
+nav i {
     /* height: 20px; */
     /* width: 20px; */
     transform: scale(1.5) rotate(0deg);
-    font-size: 25px; 
+    font-size: 25px;
     margin-bottom: -5px;
     transition: 0.4s all ease-in-out;
 }
 
-#hero ul li a:hover i{
+#hero ul li a:hover i {
     /* background-color: red; */
     transform: scale(1.5) rotate(180deg);
 }
-#hero ul li a:hover .drop{
+
+#hero ul li a:hover .drop {
     bottom: -110px;
     opacity: 1;
 
 }
 
 
-.drop{
+.drop {
     height: 100px;
     width: 100px;
     border: 2px solid black;
@@ -66,23 +110,32 @@ nav i{
     bottom: 20px;
     transition: 0.4s all ease-in-out;
     opacity: 0;
-    
+
 }
 
-#navLogo{
+#navLogo {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 18px;
+    transform: translateX(-50%);
+    cursor: pointer;
 }
 
+#navLogo::after {
+    content: "NEXTSTATE";
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
 
 /* heroHeadings */
-.heroHeadings{
-    margin-top: 50px;
+.heroHeadings {
+    margin-top: 100px;
 }
-.heroHeadings h1{
+
+.heroHeadings h1 {
     text-align: center;
     font-size: 3.5em;
     font-weight: 100;
@@ -92,40 +145,136 @@ nav i{
 
 
 /* floating-cont */
-.floating-cont{
+.floating-cont {
     border: 2px solid red;
     height: 100%;
     position: relative;
 }
 
-.floating-cont > *{
+.floating-cont>* {
     border: 2px solid black;
     width: 200px;
     position: absolute;
     opacity: 0;
 }
 
-.floatingPara{
+.floatingPara {
+    border: none;
     opacity: 1;
     width: 300px;
     position: relative;
-    left: 20px;
+    left: 5%;
+    padding: 10px;
     top: 30px;
+
+    animation-name: float;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+    transform: scale(1);
 }
 
-.floating-play-btn{
+@keyframes float{
+    from{
+    transform: scale(1);
+    top: 30px;
+
+    }
+    to{
+    top: 40px;
+    transform: scale(1.03);
+
+    }
+}
+
+
+
+.floating-play-btn {
     opacity: 1;
     top: 40%;
     left: 7%;
+    width: 190px;
+    height: 75px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.floating-customers{
+.floating-play-btn:hover .move-cont {
+    margin-left: 50%;
+}
+
+
+.floating-play-btn .move-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /*  Initial position*/
+    margin-left: -67%;
+    transition: 0.4s margin ease-in-out;
+}
+
+.floating-play-btn i {
+    border: 2px solid black;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.floating-customers {
     opacity: 1;
-    bottom: 20px;
-    left: 20px;
+    bottom: 50px;
+    left: 50px;
 }
 
-.floating-arrow{
+.dp-cont{
+    position: relative;
+    width: 100%;
+    min-width: fit-content;
+    display: flex;
+
+    & img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: black;
+        border: 3px solid blue;
+        position: absolute;
+        top: -40px;
+        left: 0px;
+
+        animation-name: move-customer-dp;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@keyframes move-customer-dp {
+    from{
+        left: 0px;
+    }
+    to{
+        left: var(--move);
+    }
+}
+
+
+
+
+.floating-arrow {
     opacity: 1;
     height: 120px;
     width: 120px;
@@ -133,7 +282,7 @@ nav i{
     right: 30%;
 }
 
-.floating-updates{
+.floating-updates {
     opacity: 1;
     right: 20%;
     bottom: 30%;
