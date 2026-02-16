@@ -2,6 +2,19 @@
     /* background-color: red; */
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: 100%;
+    border-radius: calc(var(--round) + 20px);
+    overflow: hidden;
+}
+
+#hero video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    filter: brightness(90%);
+
 }
 
 nav {
@@ -9,15 +22,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     width: 95%;
-    margin: 10px ;
+    margin: 10px;
     position: absolute;
+    z-index: 99;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 2px solid black;
-    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 35px;
     transition: 0.2s padding ease-in;
 }
 
@@ -31,17 +45,22 @@ nav:hover {
 
 
 .btn-nav-cont {
-    position: relative;
-    width: 230px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 250px;
 }
 
 nav button {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 249, 249);
     padding: 10px 30px;
-    border-radius: var(--round);
-    background-color: white;
+    border-radius: calc(var(--round) + 10px);
     cursor: pointer;
     margin-right: 18px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 1.2em;
+
 }
 
 nav button:hover+i {
@@ -52,8 +71,9 @@ nav button:hover+i {
 nav button+i {
     /* background-color: red; */
     position: relative;
-    border: 2px solid black;
     border-radius: 50%;
+    background-color: rgb(50, 44, 44);
+    color: white;
     height: 32px;
     width: 32px;
     padding: 10px;
@@ -78,8 +98,29 @@ nav button+i {
     height: 25px;
     position: relative;
     z-index: 10;
+    color: aliceblue;
+    text-transform: capitalize;
 
 }
+
+#hero ul li a::after {
+    content: "";
+    height: 2px;
+    width: 00%;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.4s all ease-in;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#hero ul li a:hover::after {
+    width: 100%;
+}
+
+
 
 nav i {
     /* height: 20px; */
@@ -127,32 +168,47 @@ nav i {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
     cursor: pointer;
+    color: white;
+    font-weight: 600;
 }
 
 
 /* heroHeadings */
 .heroHeadings {
     margin-top: 100px;
+    position: relative;
+    z-index: 10;
 }
 
 .heroHeadings h1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
     text-align: center;
     font-size: 3.5em;
     font-weight: 100;
     letter-spacing: 5px;
     word-spacing: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.heroHeadings h1:last-child {
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 3.8em;
 }
 
 
 /* floating-cont */
 .floating-cont {
-    border: 2px solid red;
     height: 100%;
     position: relative;
 }
 
 .floating-cont>* {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     width: 200px;
     position: absolute;
     opacity: 0;
@@ -166,6 +222,7 @@ nav i {
     left: 5%;
     padding: 10px;
     top: 30px;
+    color: white;
 
     animation-name: float;
     animation-duration: 1s;
@@ -176,15 +233,16 @@ nav i {
     transform: scale(1);
 }
 
-@keyframes float{
-    from{
-    transform: scale(1);
-    top: 30px;
+@keyframes float {
+    from {
+        transform: scale(1);
+        top: 30px;
 
     }
-    to{
-    top: 40px;
-    transform: scale(1.03);
+
+    to {
+        top: 40px;
+        transform: scale(1.03);
 
     }
 }
@@ -192,6 +250,7 @@ nav i {
 
 
 .floating-play-btn {
+    border: none;
     opacity: 1;
     top: 40%;
     left: 7%;
@@ -203,6 +262,14 @@ nav i {
     align-items: center;
     overflow: hidden;
     cursor: pointer;
+    color: white;
+    /* background-color: red; */
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .floating-play-btn:hover .move-cont {
@@ -221,7 +288,7 @@ nav i {
 }
 
 .floating-play-btn i {
-    border: 2px solid black;
+    color: black;
     height: 60px;
     width: 60px;
     font-size: 30px;
@@ -230,27 +297,31 @@ nav i {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    background-color: white;
+
 }
 
 .floating-customers {
+    border: none;
+    color: white;
     opacity: 1;
     bottom: 50px;
     left: 50px;
 }
 
-.dp-cont{
+.dp-cont {
     position: relative;
     width: 100%;
     min-width: fit-content;
     display: flex;
 
-    & img{
+    & img {
         height: 30px;
         width: 30px;
         border-radius: 50%;
         overflow: hidden;
         background-color: black;
-        border: 3px solid blue;
+        border: 3px solid rgb(255, 255, 255);
         position: absolute;
         top: -40px;
         left: 0px;
@@ -263,10 +334,11 @@ nav i {
 
 
 @keyframes move-customer-dp {
-    from{
+    from {
         left: 0px;
     }
-    to{
+
+    to {
         left: var(--move);
     }
 }
@@ -276,14 +348,118 @@ nav i {
 
 .floating-arrow {
     opacity: 1;
-    height: 120px;
-    width: 120px;
+    height: fit-content;
+    width: fit-content;
     border-radius: 50%;
     right: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.circular-btn {
+    flex-shrink: 0;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.circular-btn:hover {
+    transform: scale(1.08);
+}
+
+.circular-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.circular-text text {
+    fill: #ffffff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.arrow {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    color: white;
+ 
+}
+
 
 .floating-updates {
     opacity: 1;
     right: 20%;
     bottom: 30%;
+    border: none;
+    opacity: 1;
+    width: 290px;
+    height: 75px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    /* background-color: red; */
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.floating-updates:hover .move-cont {
+    margin-left: 97%;
+}
+
+.floating-updates h3 {
+    text-wrap: nowrap;
+}
+
+
+.floating-updates .move-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /*  Initial position*/
+    margin-left: -52%;
+    transition: 0.4s margin ease-in-out;
+}
+
+.floating-updates i {
+    color: black;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: white;
+
 }

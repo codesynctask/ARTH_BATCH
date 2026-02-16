@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 
 :root{
-    --primary:#080d11;
+    --primary:#103030;
     --secondary:whitesmoke;
     --lightBg:#062a38;
     --darkBg:#053543;
@@ -21,6 +22,10 @@
 body{
     /* padding: 0 10px; */
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
 }
 
 h1 {
@@ -29,5 +34,6 @@ h1 {
 
 section{
     height: 100vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    flex-shrink: 0;
 }
