@@ -1,0 +1,243 @@
+/* ===============================
+   GLOBAL RESET
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* ===============================
+   CARD LAYOUT
+================================= */
+.card {
+    width: 420px;
+    max-width: 92%;
+    padding: 45px 40px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+.card h1,
+.card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* ===============================
+   INPUT SECTION
+================================= */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #cccccc;
+}
+
+.input-group input {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* Outline Button */
+.btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    margin: 10px;
+
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* ===============================
+   OPTIONS (Login)
+================================= */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+    margin: 10px;
+}
+
+.options a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* ===============================
+   TERMS (Register)
+================================= */
+.terms {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.terms input {
+    margin-right: 6px;
+}
+
+/* ===============================
+   LINK TEXT
+================================= */
+.link-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.link-text a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link-text a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   PROFILE PAGE STYLING
+================================= */
+.profile-card {
+    text-align: center;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.email {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.profile-info {
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+}
+
+.info-item span {
+    color: #cccccc;
+}
+
+.active-status {
+    color: #4CAF50;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.profile-actions .btn {
+    width: auto;
+    padding: 10px 25px;
+    margin: 10px;
+    display: block;
+}
+
+
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 480px) {
+    .card {
+        padding: 35px 25px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions .btn {
+        width: 100%;
+    }
+}
