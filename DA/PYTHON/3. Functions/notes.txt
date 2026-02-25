@@ -1,0 +1,15 @@
+Funtion
+    - used to store python code ✅
+    - enable logic as reusable code block ✅
+    - flexible ✅
+    - reusable ✅
+
+
+Program:
+    structure of codes which gives output based on some input. 
+    it should be definitive
+    effective
+    finitine
+
+    eg: 
+        printFullName(fName, lName)

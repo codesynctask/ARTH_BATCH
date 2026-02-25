@@ -135,11 +135,3 @@ print(a and b)  # False
 print(a or b)   # True
 print(not a)    # False
 ```
-
----
-
-These notes cover the basics of Python variables, data types, and all common operators.
-
----
-
-If you want, I can also **create a compact one-page visual table format** for all these operators with examples, so it’s easier to revise. Do you want me to do that?
