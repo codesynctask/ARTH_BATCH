@@ -1,0 +1,21 @@
+1. Writing JS code to HTML
+    - internl ✅
+    - external ✅
+
+2. Variable and Data types
+    - variable : name of memory location which stores some data ✅
+
+    - what kind of data : Data types
+        PRIMITIVE DATA TYPES (single data store)  ✅
+        - number (-77228, 0, 219.12)
+        - bigInt (2189172972198791279128)
+        - string (textutal : "text" , 'text' , `text`)
+        - null - means empty (decided by dev)
+        - undefined (value is not assigned) (decided by JS)
+        - Boolean (true, false)
+
+        NON-PRIMITIVE DATA TYPES(multiple data , reffrenced)
+        - object : key value pair of data {name:John Doe} ******************
+        - array : ["val1","Val2","val3"]
+
+
