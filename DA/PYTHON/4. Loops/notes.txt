@@ -1,0 +1,12 @@
+LOOPS
+
+- reptitive task logical order executition
+    for , while
+
+
+
+# Life cycle of Loop
+1. initialize : start
+2. Condition : end
+3. updation : updating ordered value
+4. code : logic
