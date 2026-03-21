@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            width: 100px;
+            padding: 10px 20px;
+            margin: 5px 20px ;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>BG Color Changer - Level 3</h1>
+    <div class="btn-group">
+        <button>Blue</button>
+        <button>Red</button>
+        <button>Green</button>
+        <button>pink</button>
+        <button>yellow</button>
+        <button>#111</button>
+        <button>#0d5e67</button>
+    </div>
+
+
+
+    <script>
+        // SINGLE BTN WORKING
+    /*
+        // 1. Select your target element/elements
+        const btn = document.querySelector("button") //single and first btn
+
+        // 2. event binding
+        // 3. define function
+        btn.addEventListener("click",function(){
+            document.body.style.backgroundColor = btn.innerText;
+        })
+    */
+
+        // MULTIPLE BTN WORKING
+
+        // 1. Select your target element/elements
+        const btns = document.querySelectorAll("button") //single and first btn
+
+        // 2. loop through all elements
+        btns.forEach(function (btn) {
+            // 3. define function
+            btn.addEventListener("dblclick",function(){
+                document.body.style.backgroundColor = btn.innerText;
+            })
+        })
+
+
+
+
+
+
+    </script>
+</body>
+</html>

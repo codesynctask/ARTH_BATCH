@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            width: 100px;
+            padding: 10px 20px;
+            margin: 5px 20px ;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>BG Color Changer - Level 2</h1>
+    <div class="btn-group">
+        <button onclick="changeBodyBGC('red')">Red</button>
+        <button onclick="changeBodyBGC('blue')">Blue</button>
+        <button onclick="changeBodyBGC('green')">Green</button>
+    </div>
+
+
+
+    <script>
+        function changeBodyBGC(colorName){
+            document.body.style.backgroundColor = colorName
+        }
+    </script>
+</body>
+</html>
