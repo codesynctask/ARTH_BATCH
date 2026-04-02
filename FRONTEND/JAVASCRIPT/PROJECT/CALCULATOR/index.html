@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 0;
+            gap: 10px;
+        }
+
+        .cal-cont{
+            border: 2px solid;
+            padding: 10px;
+            border-radius: 10px;
+            min-width: fit-content;
+
+            
+        }
+
+        .cal-head{
+            height: 70px;
+            width: 250px;
+            font-size: 2em;
+            text-indent: 10px;
+            border: none;
+
+            &:focus{
+                outline: none;
+            }
+            
+        }
+
+        .cal-body{
+            width: 250px;
+            display: grid;
+            grid-template-columns: 100px 50px 50px 50px;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            gap: 5px;
+            min-width: fit-content;
+
+        }
+
+        .cal-body > div{
+            border: 2px solid;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover{
+                background-color: #fdffcc;
+            }
+            &:active{
+                transform: scale(1.02);
+            }
+        }
+
+        .plus-btn{
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        .equal-btn{
+            grid-row: 4/6;
+            grid-column: 4/5;
+        }
+        .zero-btn{
+            grid-row: 5/6;
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="cal-cont">
+        <input type="text" readonly class="cal-head" placeholder="0.0">
+        <div class="cal-body">
+            <div class="clear-btn">clear</div>
+            <div class="operatations">/</div>
+            <div class="operatations">*</div>
+            <div class="operatations">-</div>
+            <div class="val-btn">7</div>
+            <div class="val-btn">8</div>
+            <div class="val-btn">9</div>
+            <div class="operatations plus-btn">+</div>
+            <div class="val-btn">4</div>
+            <div class="val-btn">5</div>
+            <div class="val-btn">6</div>
+            <div class="val-btn">1</div>
+            <div class="val-btn">2</div>
+            <div class="val-btn">3</div>
+            <div class="equal-btn">=</div>
+            <div class="val-btn zero-btn">0</div>
+            <div class="val-btn">.</div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+// JS start
+
+// 1. Selecting DOM elements ✅
+const resultElm = document.querySelector("input")
+const equalBtn = document.querySelector(".equal-btn")
+const clearBtn = document.querySelector(".clear-btn")
+const operatationBtns = document.querySelectorAll(".operatations")
+const valBtns = document.querySelectorAll(".val-btn")
+
+
+
+// 2. define functions
+
+function calculate() {
+    resultElm.value = eval(resultElm.value)
+}
+function clear() {
+    resultElm.value = resultElm.value.slice(0,resultElm.value.length-1)
+    // resultElm.value = "" // all clear
+}
+
+// 3. binding function to Dom element
+equalBtn.addEventListener('click',calculate)
+clearBtn.addEventListener('click',clear)
+
+
+
+operatationBtns.forEach(function (operatation) {
+    operatation.addEventListener("click",function (){
+        resultElm.value += operatation.innerText
+    })
+
+})
+valBtns.forEach(function (btn) {
+    // console.log(btn)
+    btn.addEventListener("click",function (){
+        resultElm.value += btn.innerText
+        
+    })
+})
+   
+
+
+
+    </script>
+</body>
+</html>
