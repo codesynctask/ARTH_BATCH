@@ -1,0 +1,12 @@
+Setup
+- folder ✅
+- images and videos
+	- logo✅
+	- hero page video
+- color ✅
+	- primary : #9f8064
+	- secondary : #efebe2
+	- dark secondary : #eee7df
+
+- pages(landing page)
+  Layout(border)

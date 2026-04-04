@@ -1,0 +1,175 @@
+.hero{
+    height: 100vh;
+    width: calc(100vw - 100px);
+    margin: 50px auto;
+    border-radius: 60px;
+    background-color: lightgray;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 80px;
+}
+
+nav{
+    width: calc(100vw - 100px);
+    margin: auto ;
+    margin-top: 25px;
+    margin-bottom: -50px;
+    border-radius: 50px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 5%;
+    position: relative;
+    z-index: 2;
+
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+nav > button{
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    background-color: var(--primary);
+    color: white;
+    text-transform: capitalize;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+
+.hero-content{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content div{
+    width: 500px;
+    padding: 10px;
+}
+
+.hero-content h1{
+    color: var(--secondary);
+
+    font-size: 3.5em;
+}
+
+.hero-content p{
+    color: var(--secondary);
+    font-size: 1.4em;
+}
+
+.hero-content button{
+    /* background-color: #fff; */
+    background-color: var(--secondary);
+    color: rgb(62, 27, 27);
+    margin-top: 20px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+
+
+.mobile-nav{
+    /* background-color: red; */
+    display: none;
+}
+
+/* menu icon */
+nav i{
+    font-size: 30px;
+    display: none;
+}
+nav i:hover .mobile-nav {
+    display: flex;
+    
+}
+
+
+.mobile-nav{
+        border: 2px solid;
+        position: absolute;
+        right: 0;
+        bottom: -250px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+
+        & button{
+            padding: 10px;
+        }
+
+        & li{
+            list-style: none;
+            border-bottom: 2px solid gray;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+.whatsapp{
+    height: 90px;
+    width: 90px;
+    background-color: #378c1f;
+    border-radius: 50%;
+    position: fixed;
+    left: 20px;
+    bottom: 50%;
+    z-index: 99;
+}
+
+@media (max-width: 900px) {
+    nav > ul{
+        display: none;
+    }
+    nav > button{
+        display: none;
+    }
+
+    nav i {
+        display: block;
+    }
+
+    
+}
