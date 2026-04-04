@@ -1,0 +1,57 @@
+HTML
+
+- content ??
+- Portfolio
+    - Home
+    - Project
+    - skills
+    - contact
+
+
+- Navigation
+    1. Single page website
+    2. Multiple Page ✅
+
+
+
+-----------content
+1. Home Page   ✅ 
+    - greeting
+    - Name 
+    - Cv
+    - Paragraph
+    - self image
+
+2. Project 
+    - table(name , link(btn) , Image , breif)
+
+
+
+3. skills
+    - frontent
+    HTML , CSS , JS
+
+    - Backend
+    PHP , Node JS
+
+    - DB 
+    mySQL
+
+
+4. contact (form)
+
+
+
+
+=================Set - up
+1. Folder (images)
+2. Files
+    - index.html (home page)
+    - contact.html (contact page)
+    - prject.html (prject page)
+    - skills.html (skills page)
+
+3. navigation bar✅
+
+
+
