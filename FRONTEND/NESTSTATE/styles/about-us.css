@@ -2,19 +2,26 @@
     /* background-color: red; */
     /* border: 2px solid ; */
     height: 90%;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
 
 #about-us .top {
     height: 20%;
+    min-height: fit-content;
     display: flex;
     justify-content: space-between;
+    /* flex-direction: column; */
     padding: 3%;
 
     & h3 {
         font-size: 1.6em;
         font-weight: 400;
+        text-wrap: nowrap;
     }
 
     & h2 {
@@ -33,33 +40,56 @@
 
 #about-us .bottom {
     height: 90%;
+    min-height: fit-content;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: calc(var(--round) + 20px);
     position: relative;
     overflow: hidden;
+    min-height: fit-content;
+    /* margin-bottom: -100px; */
+    margin-top: 50px;
+
 
 
 
     & img {
-        height: 100%;
+
+        width: 130%;
+        max-width: 850px;
         position: absolute;
         bottom: 0;
         left: -5%;
         z-index: 99;
+        /* display: none; */
+            transform: scale(0.5) translateX(-50%) translateY(50%);
+            animation-name: growHome;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-timeline: scroll(root);
+            animation-range: 10% 30%;
+        }
     }
-}
 
-/* div{
-    border: 2px solid;
-} */
+    @keyframes growHome {
+        from {
+            transform: scale(0.5) translateX(-50%) translateY(50%);
+        }
+        to {
+            transform: scale(1) translateX(0%) translateY(0%);
+        }
+    }
+
 
 #about-us .about-bottom-content {
     background-color: #bee8ff;
 
     height: 70%;
+    flex-shrink: 0;
     width: 100%;
+    min-height: fit-content;
     /* border-radius: 20px; */
     border-radius: calc(var(--round) + 20px);
 
@@ -74,9 +104,15 @@
     flex-shrink: 0;
     position: absolute;
     right: 40px;
-    bottom: 0;
+    bottom: 0px;
     height: 65%;
     width: 45%;
+    max-width: fit-content;
+    z-index: 99;
+    /* background-color: red; */
+    
+
+
 
 }
 
@@ -93,10 +129,10 @@
     align-items: center;
     flex-direction: column;
     padding: 15px;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
 
     & h4 {
-        font-size: 0.7em;
+        font-size: clamp(0.8rem, 1.2vw, 1rem);
         font-weight: 400;
     }
 }
@@ -172,5 +208,49 @@
     align-items: center;
     flex-shrink: 0;
     background-color: white;
+
+}
+
+
+
+/* responsive */
+
+@media (max-width:1040px) {
+    .content{
+        /* bottom: 50px; */
+        top: -100px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    #about-us .bottom {
+        height: 110%;
+    }
+}
+@media (max-width:840px) {
+    .content{
+       
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #about-us .about-bottom-content{
+        height: 80%;
+    }
+}
+@media (max-width:830px) {
+    #about-us .top{
+        /* background-color: #fff; */
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    #about-us .about-bottom-content{
+        /* background-color: red; */
+        bottom: -200px;
+    }
+
 
 }
