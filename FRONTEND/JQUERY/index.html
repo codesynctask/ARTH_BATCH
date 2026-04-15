@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery - Tutotial for ARTH</title>
+    <style>
+        .cursor {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(195, 195, 196);
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            transform: translate(-50%,-50%);
+        }
+        html, body {
+           cursor: none;
+        }
+    </style>
 </head>
 <body>
     <h1>jQuery - Learning all major concept</h1>
+    <div class="cursor"></div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    <script>
+        $(document).ready(function() {
+            $(window).mousemove((x)=>{
+                $(".cursor").show()
+
+                $(".cursor").css({
+                    "left":x.clientX+"px",
+                    "top":x.clientY+"px"
+                })
+                console.log()
+            })
+            $(window).mouseleave(()=>{
+                $(".cursor").hide()
+            })
+        });
+    </script>
 </body>
 </html>
