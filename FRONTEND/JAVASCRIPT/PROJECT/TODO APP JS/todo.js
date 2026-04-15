@@ -50,7 +50,7 @@ createTodoBtn.addEventListener("click",()=>{
 
 function saveTodoData(data){
     todoData.push(data)
-    console.log(todoData)
+    // console.log(todoData)
 
     localStorage.setItem("todoData",JSON.stringify(todoData));
 }
@@ -60,3 +60,37 @@ saveTodoData({
     "status":false
 })
 
+
+
+// making tasks working(complte , edit , delete)
+const li = document.querySelector("li")
+const liCompleIcon = li.querySelector("i")
+const liEdit = li.querySelector("#edit")
+const liDelete = li.querySelector("#delete")
+
+
+// checking the task
+liCompleIcon.addEventListener("click",function () {
+    if (this.getAttribute("class") == "ri-checkbox-circle-line text-2xl") {
+        this.setAttribute("class","ri-checkbox-blank-circle-line text-2xl")
+        li.querySelector("input").style.textDecoration="none"
+    }else{
+        // change icon type
+        this.setAttribute("class","ri-checkbox-circle-line text-2xl")
+
+        // make task name appreared as cut through
+        li.querySelector("input").style.textDecoration="line-through"
+    }
+    
+})
+
+
+liEdit.addEventListener("click",function(){
+    li.querySelector("input").readOnly=false
+    li.querySelector("input").style.border="2px solid black"
+    
+})
+liDelete.addEventListener("click",function(){
+    li.remove()
+    
+})
