@@ -1,0 +1,501 @@
+student_id,gender,math_score,reading_score,writing_score,parental_education,study_hours,attendance_percentage
+1,Male,97.0,60.0,,Master,2.0,
+2,Female,66.0,,81.0,Associate,4.0,68.0
+3,Male,67.0,44.0,96.0,Bachelor,5.0,95.0
+4,Male,52.0,58.0,96.0,High School,5.0,81.0
+5,Male,59.0,98.0,86.0,,2.0,85.0
+6,Female,88.0,53.0,98.0,Associate,1.0,71.0
+7,Male,92.0,65.0,54.0,Bachelor,4.0,76.0
+8,Male,80.0,43.0,47.0,High School,5.0,73.0
+9,Male,58.0,64.0,,Associate,2.0,73.0
+10,Female,66.0,84.0,,Master,5.0,93.0
+11,Male,81.0,81.0,86.0,Master,4.0,79.0
+12,Male,57.0,64.0,84.0,Master,4.0,70.0
+13,Male,61.0,57.0,49.0,High School,3.0,75.0
+14,Male,36.0,,99.0,Associate,2.0,90.0
+15,Female,51.0,47.0,53.0,Master,4.0,65.0
+16,Male,67.0,78.0,61.0,High School,3.0,78.0
+17,Female,43.0,79.0,56.0,Master,3.0,96.0
+18,Female,77.0,53.0,45.0,Bachelor,5.0,63.0
+19,Female,82.0,71.0,68.0,Associate,5.0,63.0
+20,Male,73.0,90.0,58.0,Associate,3.0,79.0
+21,Female,76.0,77.0,54.0,High School,5.0,69.0
+22,Male,60.0,72.0,60.0,High School,4.0,83.0
+23,Female,84.0,62.0,74.0,Associate,1.0,94.0
+24,Female,59.0,54.0,,,4.0,
+25,Female,58.0,72.0,53.0,Master,3.0,96.0
+26,Female,47.0,64.0,43.0,Bachelor,3.0,97.0
+27,Female,94.0,56.0,45.0,Master,4.0,80.0
+28,Female,41.0,72.0,62.0,High School,5.0,99.0
+29,Female,91.0,86.0,55.0,High School,5.0,98.0
+30,Female,70.0,94.0,62.0,Master,3.0,80.0
+31,Male,79.0,41.0,49.0,High School,2.0,69.0
+32,Male,54.0,53.0,52.0,Associate,5.0,97.0
+33,Female,,92.0,96.0,Associate,4.0,
+34,Female,42.0,79.0,,,,79.0
+35,Female,50.0,,78.0,Associate,,76.0
+36,Male,48.0,90.0,82.0,Associate,3.0,66.0
+37,Female,49.0,,63.0,Bachelor,,63.0
+38,Male,66.0,90.0,84.0,Bachelor,4.0,88.0
+39,Male,97.0,45.0,69.0,Associate,3.0,
+40,Male,,45.0,47.0,,2.0,62.0
+41,Male,59.0,42.0,53.0,Bachelor,,83.0
+42,Male,92.0,46.0,,High School,2.0,96.0
+43,Female,97.0,90.0,54.0,High School,2.0,75.0
+44,Female,96.0,47.0,,High School,1.0,63.0
+45,Female,56.0,81.0,63.0,Master,5.0,83.0
+46,Female,92.0,91.0,58.0,Associate,4.0,93.0
+47,Female,92.0,54.0,59.0,High School,,89.0
+48,Male,83.0,86.0,95.0,Master,1.0,77.0
+49,Female,86.0,68.0,44.0,Bachelor,3.0,
+50,Female,76.0,72.0,51.0,Associate,4.0,90.0
+51,Male,49.0,91.0,52.0,Bachelor,2.0,
+52,Female,88.0,69.0,90.0,Master,5.0,78.0
+53,Male,94.0,78.0,44.0,High School,1.0,
+54,Female,42.0,66.0,46.0,High School,2.0,83.0
+55,Male,87.0,75.0,88.0,Master,5.0,71.0
+56,Female,94.0,68.0,85.0,,2.0,89.0
+57,Female,39.0,77.0,45.0,Associate,4.0,97.0
+58,Male,,96.0,87.0,Master,4.0,90.0
+59,Male,81.0,72.0,96.0,Bachelor,4.0,95.0
+60,Male,,,,Master,1.0,78.0
+61,Male,74.0,66.0,66.0,,4.0,95.0
+62,Male,86.0,94.0,55.0,Associate,5.0,89.0
+63,Male,50.0,72.0,68.0,Master,2.0,92.0
+64,Male,47.0,,67.0,Master,3.0,77.0
+65,Male,64.0,61.0,89.0,High School,5.0,87.0
+66,Female,53.0,41.0,76.0,Associate,,70.0
+67,Female,51.0,49.0,72.0,,,92.0
+68,Male,97.0,44.0,55.0,Master,1.0,
+69,Female,53.0,98.0,96.0,Associate,2.0,65.0
+70,Female,92.0,49.0,79.0,Master,1.0,63.0
+71,Female,89.0,72.0,76.0,High School,2.0,79.0
+72,Female,96.0,93.0,54.0,Associate,2.0,86.0
+73,Male,57.0,,51.0,High School,1.0,74.0
+74,Female,43.0,52.0,68.0,High School,5.0,65.0
+75,Male,46.0,,,High School,2.0,73.0
+76,Female,35.0,86.0,72.0,High School,1.0,70.0
+77,Female,92.0,,81.0,Associate,2.0,98.0
+78,Female,35.0,84.0,97.0,High School,,68.0
+79,Male,68.0,63.0,82.0,High School,5.0,85.0
+80,Female,82.0,,71.0,,4.0,75.0
+81,Male,35.0,95.0,,Associate,2.0,64.0
+82,Female,50.0,54.0,74.0,Associate,3.0,69.0
+83,Male,95.0,68.0,80.0,Bachelor,4.0,62.0
+84,Female,98.0,47.0,77.0,Associate,4.0,72.0
+85,Male,,44.0,63.0,Associate,2.0,89.0
+86,Male,56.0,68.0,92.0,Bachelor,1.0,65.0
+87,Female,60.0,86.0,60.0,Associate,2.0,76.0
+88,Male,50.0,43.0,81.0,Associate,3.0,
+89,Female,85.0,51.0,,Associate,4.0,94.0
+90,Female,91.0,84.0,,Associate,2.0,85.0
+91,Female,63.0,41.0,93.0,Bachelor,1.0,64.0
+92,Female,81.0,66.0,86.0,Associate,2.0,
+93,Female,96.0,70.0,41.0,Associate,5.0,96.0
+94,Female,,90.0,66.0,Bachelor,1.0,79.0
+95,Female,,90.0,,Master,3.0,80.0
+96,Female,73.0,75.0,62.0,High School,4.0,69.0
+97,Female,,75.0,50.0,Master,2.0,64.0
+98,Female,,65.0,55.0,Bachelor,1.0,95.0
+99,Female,44.0,82.0,,High School,5.0,65.0
+100,Male,68.0,66.0,53.0,Bachelor,,85.0
+101,Male,86.0,44.0,,Bachelor,5.0,63.0
+102,Female,44.0,59.0,79.0,Associate,3.0,
+103,Female,53.0,50.0,81.0,High School,4.0,98.0
+104,Female,92.0,49.0,99.0,Associate,3.0,
+105,Female,35.0,79.0,,High School,2.0,60.0
+106,Female,,77.0,92.0,Bachelor,1.0,83.0
+107,Female,50.0,45.0,72.0,Bachelor,5.0,95.0
+108,Female,58.0,47.0,79.0,Master,,65.0
+109,Female,36.0,62.0,71.0,High School,1.0,90.0
+110,Male,,,67.0,Associate,1.0,
+111,Female,58.0,65.0,96.0,Master,2.0,83.0
+112,Male,,85.0,92.0,Master,3.0,84.0
+113,Female,84.0,82.0,50.0,,5.0,95.0
+114,Female,69.0,51.0,50.0,Associate,2.0,80.0
+115,Male,67.0,65.0,55.0,Master,3.0,89.0
+116,Female,67.0,52.0,69.0,Associate,2.0,83.0
+117,Male,95.0,79.0,69.0,Master,5.0,
+118,Female,85.0,57.0,72.0,Associate,1.0,81.0
+119,Female,77.0,64.0,,,1.0,87.0
+120,Male,46.0,72.0,76.0,Bachelor,3.0,66.0
+121,Female,99.0,86.0,83.0,Bachelor,4.0,94.0
+122,Male,67.0,79.0,89.0,Bachelor,3.0,87.0
+123,Female,74.0,99.0,66.0,Bachelor,4.0,73.0
+124,Male,77.0,82.0,99.0,Master,2.0,69.0
+125,Male,78.0,51.0,,Master,2.0,75.0
+126,Female,63.0,83.0,66.0,Master,5.0,75.0
+127,Female,47.0,75.0,99.0,Associate,4.0,90.0
+128,Male,46.0,87.0,90.0,Associate,5.0,84.0
+129,Female,,43.0,81.0,Associate,1.0,72.0
+130,Female,36.0,44.0,,Associate,4.0,65.0
+131,Female,69.0,95.0,,Bachelor,3.0,68.0
+132,Male,42.0,76.0,93.0,Bachelor,1.0,95.0
+133,Male,60.0,47.0,81.0,Bachelor,1.0,79.0
+134,Male,68.0,81.0,84.0,High School,3.0,77.0
+135,Male,41.0,88.0,94.0,Master,,80.0
+136,Male,92.0,67.0,47.0,Associate,4.0,63.0
+137,Male,63.0,70.0,67.0,Associate,5.0,92.0
+138,Male,70.0,97.0,62.0,Bachelor,1.0,86.0
+139,Male,55.0,48.0,76.0,Associate,4.0,66.0
+140,Male,70.0,93.0,57.0,Associate,2.0,65.0
+141,Female,44.0,90.0,42.0,Master,4.0,74.0
+142,Male,58.0,68.0,,Bachelor,5.0,77.0
+143,Female,98.0,53.0,67.0,Master,4.0,91.0
+144,Female,83.0,,86.0,High School,3.0,70.0
+145,Female,70.0,80.0,40.0,High School,5.0,79.0
+146,Male,58.0,,82.0,High School,2.0,83.0
+147,Male,57.0,50.0,51.0,Bachelor,3.0,74.0
+148,Male,96.0,62.0,93.0,Associate,4.0,
+149,Male,71.0,40.0,67.0,Bachelor,5.0,80.0
+150,Female,,,87.0,Bachelor,2.0,85.0
+151,Male,89.0,76.0,41.0,Associate,,73.0
+152,Male,47.0,,55.0,Master,2.0,96.0
+153,Male,57.0,65.0,99.0,High School,4.0,80.0
+154,Male,64.0,85.0,74.0,Master,2.0,
+155,Male,51.0,75.0,62.0,High School,1.0,64.0
+156,Female,96.0,93.0,85.0,Bachelor,3.0,62.0
+157,Male,47.0,62.0,38.0,High School,,82.0
+158,Female,93.0,96.0,90.0,Bachelor,4.0,85.0
+159,Male,53.0,40.0,83.0,Master,4.0,96.0
+160,Female,83.0,93.0,52.0,Bachelor,2.0,83.0
+161,Male,46.0,94.0,46.0,Master,4.0,
+162,Male,95.0,90.0,52.0,Associate,5.0,84.0
+163,Female,53.0,79.0,86.0,Associate,5.0,80.0
+164,Female,43.0,54.0,94.0,Associate,5.0,71.0
+165,Female,62.0,60.0,61.0,Bachelor,1.0,92.0
+166,Male,86.0,86.0,41.0,Associate,2.0,63.0
+167,Female,50.0,,49.0,High School,1.0,66.0
+168,Male,46.0,92.0,96.0,Master,4.0,81.0
+169,Male,59.0,48.0,95.0,Master,1.0,92.0
+170,Female,86.0,49.0,74.0,High School,4.0,76.0
+171,Female,87.0,91.0,98.0,Bachelor,4.0,83.0
+172,Male,57.0,,74.0,,3.0,
+173,Male,50.0,92.0,80.0,Master,5.0,87.0
+174,Female,91.0,65.0,97.0,,,
+175,Female,73.0,80.0,43.0,Bachelor,,81.0
+176,Female,87.0,74.0,76.0,Bachelor,5.0,76.0
+177,Male,76.0,,93.0,High School,,93.0
+178,Male,92.0,64.0,83.0,High School,4.0,
+179,Male,73.0,65.0,61.0,Associate,1.0,65.0
+180,Male,48.0,50.0,,Bachelor,1.0,93.0
+181,Male,39.0,77.0,99.0,Bachelor,5.0,60.0
+182,Male,69.0,41.0,50.0,High School,4.0,69.0
+183,Female,52.0,46.0,,Bachelor,2.0,80.0
+184,Male,43.0,57.0,,Master,1.0,64.0
+185,Male,,66.0,44.0,High School,5.0,61.0
+186,Male,51.0,73.0,89.0,Associate,4.0,81.0
+187,Female,41.0,66.0,41.0,High School,4.0,61.0
+188,Male,80.0,56.0,96.0,Bachelor,2.0,69.0
+189,Male,47.0,82.0,45.0,Associate,5.0,93.0
+190,Female,74.0,98.0,,High School,4.0,75.0
+191,Male,,,66.0,Master,1.0,98.0
+192,Male,43.0,98.0,91.0,,2.0,81.0
+193,Male,84.0,90.0,90.0,High School,5.0,71.0
+194,Male,61.0,93.0,88.0,Master,2.0,83.0
+195,Male,39.0,63.0,82.0,Master,1.0,99.0
+196,Female,63.0,64.0,83.0,Master,5.0,97.0
+197,Female,,46.0,47.0,Associate,2.0,69.0
+198,Female,,91.0,,Master,3.0,94.0
+199,Male,42.0,45.0,71.0,Master,1.0,
+200,Male,99.0,92.0,94.0,Master,,66.0
+201,Male,51.0,63.0,63.0,Associate,1.0,80.0
+202,Female,79.0,72.0,78.0,High School,3.0,79.0
+203,Male,38.0,88.0,86.0,Bachelor,3.0,85.0
+204,Male,70.0,68.0,95.0,Master,4.0,
+205,Female,65.0,82.0,40.0,,2.0,81.0
+206,Male,53.0,61.0,93.0,Master,4.0,
+207,Female,,,43.0,Associate,2.0,
+208,Female,88.0,67.0,42.0,High School,3.0,80.0
+209,Female,73.0,89.0,42.0,Associate,3.0,74.0
+210,Male,53.0,60.0,91.0,,4.0,81.0
+211,Male,73.0,,84.0,Master,5.0,87.0
+212,Male,79.0,46.0,60.0,Associate,4.0,73.0
+213,Male,47.0,56.0,86.0,Bachelor,2.0,
+214,Male,92.0,59.0,46.0,,4.0,99.0
+215,Male,54.0,80.0,72.0,Master,1.0,87.0
+216,Male,95.0,88.0,,Associate,2.0,85.0
+217,Female,73.0,59.0,95.0,Bachelor,2.0,61.0
+218,Male,35.0,93.0,86.0,Associate,5.0,84.0
+219,Female,37.0,,98.0,Bachelor,,
+220,Male,96.0,67.0,96.0,Bachelor,2.0,67.0
+221,Male,97.0,,79.0,Associate,3.0,92.0
+222,Male,,88.0,72.0,Associate,4.0,94.0
+223,Female,90.0,46.0,87.0,High School,1.0,65.0
+224,Female,67.0,40.0,55.0,Master,5.0,
+225,Female,72.0,71.0,99.0,Bachelor,,82.0
+226,Female,,52.0,54.0,High School,,84.0
+227,Male,,69.0,61.0,Associate,3.0,78.0
+228,Female,78.0,62.0,,Master,2.0,64.0
+229,Male,,90.0,69.0,High School,3.0,70.0
+230,Male,,98.0,72.0,Bachelor,2.0,71.0
+231,Female,79.0,95.0,75.0,High School,4.0,69.0
+232,Female,,,,Bachelor,2.0,67.0
+233,Female,81.0,71.0,93.0,Associate,,83.0
+234,Female,55.0,,98.0,Master,1.0,87.0
+235,Female,70.0,68.0,84.0,Master,2.0,95.0
+236,Female,53.0,88.0,62.0,,1.0,
+237,Female,54.0,84.0,46.0,Associate,5.0,80.0
+238,Female,91.0,,41.0,Bachelor,1.0,67.0
+239,Male,52.0,69.0,51.0,Associate,4.0,68.0
+240,Female,81.0,55.0,74.0,Master,,74.0
+241,Female,,79.0,71.0,Associate,,99.0
+242,Male,48.0,58.0,48.0,Associate,4.0,77.0
+243,Female,49.0,57.0,,Associate,3.0,
+244,Male,65.0,40.0,93.0,Bachelor,,65.0
+245,Male,35.0,53.0,40.0,High School,1.0,71.0
+246,Female,88.0,90.0,96.0,High School,1.0,61.0
+247,Male,37.0,86.0,,Associate,5.0,66.0
+248,Male,50.0,89.0,66.0,High School,5.0,75.0
+249,Male,91.0,41.0,46.0,,2.0,62.0
+250,Male,46.0,93.0,40.0,Associate,5.0,62.0
+251,Female,50.0,67.0,62.0,Associate,2.0,86.0
+252,Male,58.0,88.0,71.0,Master,4.0,99.0
+253,Female,,,49.0,High School,1.0,97.0
+254,Male,42.0,,79.0,Bachelor,,92.0
+255,Male,70.0,77.0,46.0,Associate,5.0,87.0
+256,Male,42.0,90.0,52.0,Master,4.0,60.0
+257,Male,,,,Bachelor,4.0,67.0
+258,Female,94.0,40.0,62.0,High School,4.0,96.0
+259,Female,84.0,47.0,42.0,Master,5.0,91.0
+260,Male,62.0,68.0,48.0,Associate,4.0,
+261,Male,,94.0,96.0,Bachelor,2.0,63.0
+262,Female,98.0,,71.0,Associate,,89.0
+263,Male,61.0,42.0,61.0,High School,4.0,65.0
+264,Male,97.0,71.0,97.0,Bachelor,5.0,78.0
+265,Male,51.0,49.0,52.0,High School,3.0,91.0
+266,Female,67.0,,75.0,High School,,68.0
+267,Female,63.0,58.0,45.0,Master,4.0,71.0
+268,Female,47.0,85.0,,Associate,3.0,70.0
+269,Male,80.0,73.0,42.0,,3.0,75.0
+270,Male,,99.0,85.0,High School,5.0,60.0
+271,Female,40.0,72.0,63.0,,3.0,80.0
+272,Female,81.0,62.0,55.0,,,89.0
+273,Female,59.0,94.0,43.0,High School,2.0,72.0
+274,Female,44.0,67.0,74.0,Master,1.0,93.0
+275,Male,90.0,71.0,97.0,Master,2.0,63.0
+276,Female,64.0,89.0,85.0,Master,3.0,87.0
+277,Male,39.0,46.0,50.0,Master,2.0,97.0
+278,Female,67.0,68.0,65.0,High School,5.0,90.0
+279,Male,99.0,47.0,42.0,Bachelor,1.0,86.0
+280,Female,52.0,40.0,50.0,Bachelor,3.0,64.0
+281,Female,83.0,96.0,,Bachelor,1.0,84.0
+282,Female,45.0,94.0,87.0,Bachelor,,62.0
+283,Female,,42.0,77.0,Associate,5.0,92.0
+284,Male,97.0,,82.0,Bachelor,1.0,63.0
+285,Female,93.0,62.0,,Associate,4.0,84.0
+286,Male,61.0,98.0,99.0,Associate,3.0,79.0
+287,Male,83.0,47.0,66.0,Master,4.0,93.0
+288,Male,67.0,93.0,88.0,Associate,1.0,85.0
+289,Male,35.0,96.0,95.0,High School,4.0,
+290,Female,55.0,86.0,40.0,,4.0,94.0
+291,Male,89.0,76.0,93.0,Master,1.0,87.0
+292,Male,40.0,42.0,77.0,Associate,5.0,88.0
+293,Male,39.0,90.0,71.0,High School,4.0,68.0
+294,Female,37.0,72.0,77.0,High School,4.0,97.0
+295,Female,87.0,67.0,64.0,High School,5.0,65.0
+296,Female,57.0,86.0,50.0,Master,4.0,78.0
+297,Female,87.0,47.0,,Master,4.0,70.0
+298,Male,71.0,73.0,70.0,Bachelor,4.0,61.0
+299,Male,51.0,74.0,43.0,Master,2.0,68.0
+300,Female,35.0,71.0,61.0,High School,5.0,80.0
+301,Male,85.0,63.0,56.0,High School,,83.0
+302,Male,79.0,53.0,,Master,5.0,93.0
+303,Male,38.0,71.0,77.0,Associate,3.0,81.0
+304,Female,96.0,95.0,65.0,Master,3.0,62.0
+305,Female,99.0,85.0,70.0,Master,,71.0
+306,Male,66.0,82.0,96.0,High School,5.0,87.0
+307,Female,68.0,55.0,96.0,Bachelor,5.0,89.0
+308,Female,73.0,43.0,85.0,High School,5.0,85.0
+309,Female,60.0,91.0,78.0,,2.0,80.0
+310,Female,68.0,76.0,50.0,High School,3.0,87.0
+311,Female,88.0,93.0,80.0,Master,5.0,85.0
+312,Male,37.0,60.0,82.0,High School,5.0,
+313,Female,84.0,53.0,62.0,High School,2.0,80.0
+314,Male,46.0,70.0,90.0,High School,2.0,94.0
+315,Male,99.0,94.0,79.0,Master,5.0,93.0
+316,Female,,87.0,73.0,Master,1.0,77.0
+317,Male,39.0,,64.0,Master,5.0,70.0
+318,Male,91.0,46.0,75.0,Master,5.0,82.0
+319,Male,51.0,,97.0,Bachelor,2.0,81.0
+320,Female,81.0,46.0,44.0,Bachelor,2.0,76.0
+321,Female,57.0,72.0,42.0,Associate,5.0,64.0
+322,Male,48.0,62.0,80.0,Master,5.0,
+323,Female,85.0,60.0,82.0,Bachelor,5.0,89.0
+324,Female,72.0,58.0,95.0,High School,2.0,74.0
+325,Female,98.0,87.0,94.0,Master,5.0,86.0
+326,Female,,58.0,88.0,Associate,5.0,94.0
+327,Male,84.0,,68.0,Associate,4.0,92.0
+328,Male,64.0,68.0,60.0,Associate,1.0,79.0
+329,Female,85.0,99.0,79.0,High School,3.0,
+330,Female,97.0,,47.0,Bachelor,,93.0
+331,Male,86.0,41.0,69.0,High School,4.0,61.0
+332,Male,72.0,40.0,80.0,Master,,94.0
+333,Female,64.0,86.0,90.0,Associate,5.0,99.0
+334,Male,85.0,44.0,67.0,High School,4.0,87.0
+335,Female,39.0,59.0,,High School,5.0,98.0
+336,Female,63.0,50.0,68.0,Bachelor,2.0,65.0
+337,Male,,81.0,55.0,Bachelor,4.0,68.0
+338,Male,44.0,41.0,73.0,Associate,2.0,79.0
+339,Female,90.0,42.0,39.0,,4.0,60.0
+340,Female,51.0,62.0,,High School,4.0,67.0
+341,Male,51.0,94.0,50.0,Bachelor,2.0,82.0
+342,Female,68.0,51.0,66.0,High School,3.0,62.0
+343,Male,40.0,59.0,49.0,High School,1.0,63.0
+344,Female,87.0,44.0,76.0,High School,5.0,84.0
+345,Male,77.0,76.0,39.0,Bachelor,4.0,97.0
+346,Male,57.0,77.0,69.0,Associate,5.0,74.0
+347,Male,89.0,69.0,50.0,Master,2.0,80.0
+348,Female,50.0,48.0,83.0,Associate,5.0,94.0
+349,Female,42.0,73.0,64.0,Master,,73.0
+350,Male,38.0,92.0,86.0,,5.0,95.0
+351,Female,38.0,83.0,78.0,Associate,1.0,71.0
+352,Male,90.0,74.0,54.0,Master,1.0,
+353,Male,59.0,91.0,77.0,Bachelor,1.0,98.0
+354,Female,61.0,97.0,68.0,Bachelor,1.0,68.0
+355,Female,66.0,61.0,71.0,Associate,1.0,94.0
+356,Male,84.0,83.0,97.0,Associate,1.0,72.0
+357,Female,95.0,63.0,,High School,2.0,74.0
+358,Female,85.0,,82.0,,4.0,77.0
+359,Male,53.0,49.0,72.0,High School,,92.0
+360,Male,55.0,69.0,85.0,High School,1.0,65.0
+361,Female,,95.0,43.0,Bachelor,2.0,86.0
+362,Male,76.0,,56.0,Bachelor,2.0,82.0
+363,Male,95.0,85.0,,Master,2.0,86.0
+364,Female,56.0,62.0,44.0,Bachelor,4.0,93.0
+365,Male,55.0,,47.0,Bachelor,5.0,97.0
+366,Male,35.0,56.0,78.0,Associate,4.0,73.0
+367,Female,39.0,89.0,69.0,Bachelor,,95.0
+368,Female,,90.0,71.0,Master,2.0,67.0
+369,Male,80.0,56.0,65.0,Associate,3.0,94.0
+370,Male,,53.0,,Master,1.0,78.0
+371,Female,83.0,48.0,52.0,Bachelor,1.0,89.0
+372,Female,79.0,79.0,67.0,Master,4.0,73.0
+373,Female,61.0,41.0,74.0,Associate,5.0,
+374,Female,60.0,84.0,66.0,High School,3.0,84.0
+375,Male,81.0,64.0,59.0,Master,5.0,99.0
+376,Female,90.0,78.0,41.0,Master,,
+377,Female,97.0,48.0,57.0,Associate,1.0,73.0
+378,Male,82.0,93.0,69.0,Associate,5.0,85.0
+379,Female,95.0,61.0,73.0,Master,,97.0
+380,Male,60.0,82.0,87.0,Bachelor,1.0,82.0
+381,Female,70.0,,41.0,Master,3.0,81.0
+382,Female,35.0,43.0,64.0,Associate,1.0,78.0
+383,Female,42.0,65.0,54.0,,5.0,
+384,Male,86.0,97.0,49.0,High School,3.0,78.0
+385,Male,81.0,68.0,59.0,Bachelor,3.0,68.0
+386,Female,90.0,84.0,54.0,Master,1.0,87.0
+387,Male,48.0,73.0,47.0,High School,,79.0
+388,Male,,62.0,91.0,Master,4.0,66.0
+389,Male,36.0,76.0,38.0,Associate,5.0,73.0
+390,Male,60.0,50.0,59.0,High School,2.0,68.0
+391,Male,,45.0,63.0,Bachelor,4.0,
+392,Male,93.0,,93.0,Associate,3.0,73.0
+393,Female,90.0,60.0,96.0,Bachelor,,97.0
+394,Female,41.0,81.0,55.0,Associate,3.0,
+395,Male,37.0,,87.0,High School,3.0,99.0
+396,Female,57.0,80.0,51.0,Bachelor,4.0,76.0
+397,Female,,77.0,84.0,Bachelor,,89.0
+398,Female,72.0,73.0,66.0,Associate,3.0,68.0
+399,Female,,,49.0,Bachelor,2.0,92.0
+400,Male,98.0,76.0,73.0,Associate,5.0,84.0
+401,Female,62.0,,96.0,Associate,,73.0
+402,Female,,77.0,72.0,Associate,2.0,70.0
+403,Male,91.0,97.0,89.0,Associate,,
+404,Male,51.0,51.0,98.0,High School,1.0,73.0
+405,Female,78.0,62.0,49.0,Associate,1.0,89.0
+406,Female,59.0,92.0,44.0,Master,1.0,
+407,Female,51.0,81.0,66.0,Bachelor,2.0,63.0
+408,Female,47.0,61.0,48.0,Master,2.0,87.0
+409,Female,59.0,60.0,70.0,High School,3.0,67.0
+410,Female,44.0,66.0,43.0,,1.0,61.0
+411,Male,52.0,96.0,84.0,Bachelor,4.0,81.0
+412,Female,68.0,70.0,52.0,Master,4.0,75.0
+413,Female,42.0,45.0,69.0,High School,1.0,88.0
+414,Male,74.0,66.0,,Associate,1.0,89.0
+415,Male,76.0,79.0,48.0,Master,1.0,71.0
+416,Male,75.0,73.0,95.0,High School,2.0,94.0
+417,Male,40.0,51.0,,,2.0,70.0
+418,Female,86.0,84.0,63.0,Bachelor,2.0,80.0
+419,Female,60.0,96.0,71.0,Bachelor,5.0,80.0
+420,Female,98.0,92.0,83.0,Master,4.0,64.0
+421,Female,93.0,46.0,71.0,Associate,4.0,79.0
+422,Female,,49.0,66.0,High School,3.0,96.0
+423,Female,93.0,84.0,41.0,Master,2.0,62.0
+424,Male,67.0,56.0,54.0,High School,,92.0
+425,Female,87.0,65.0,72.0,High School,5.0,68.0
+426,Male,56.0,60.0,50.0,Associate,4.0,68.0
+427,Male,55.0,67.0,78.0,Associate,2.0,63.0
+428,Female,38.0,97.0,76.0,Master,3.0,94.0
+429,Male,96.0,85.0,52.0,Associate,2.0,76.0
+430,Female,96.0,41.0,92.0,Associate,1.0,93.0
+431,Male,58.0,99.0,66.0,,2.0,83.0
+432,Female,89.0,,66.0,Associate,1.0,
+433,Male,43.0,82.0,48.0,,1.0,
+434,Female,37.0,40.0,89.0,High School,3.0,67.0
+435,Female,65.0,90.0,,High School,4.0,
+436,Female,74.0,92.0,39.0,High School,2.0,99.0
+437,Female,70.0,75.0,84.0,High School,1.0,
+438,Female,58.0,90.0,51.0,Master,2.0,71.0
+439,Male,40.0,65.0,57.0,,4.0,74.0
+440,Male,38.0,68.0,59.0,High School,4.0,78.0
+441,Male,40.0,60.0,48.0,High School,5.0,
+442,Female,85.0,50.0,64.0,,,88.0
+443,Male,96.0,79.0,40.0,Bachelor,3.0,81.0
+444,Female,91.0,50.0,,High School,1.0,99.0
+445,Female,42.0,75.0,99.0,Bachelor,5.0,80.0
+446,Male,60.0,88.0,81.0,Master,3.0,97.0
+447,Male,85.0,98.0,93.0,Associate,2.0,79.0
+448,Female,79.0,,65.0,High School,1.0,88.0
+449,Male,78.0,79.0,66.0,Associate,4.0,63.0
+450,Female,39.0,74.0,58.0,Associate,1.0,
+451,Female,60.0,93.0,84.0,Master,2.0,87.0
+452,Female,53.0,,53.0,Associate,5.0,87.0
+453,Female,54.0,94.0,74.0,Bachelor,5.0,63.0
+454,Female,46.0,86.0,96.0,,5.0,81.0
+455,Male,81.0,63.0,57.0,Associate,4.0,71.0
+456,Male,35.0,93.0,43.0,Associate,3.0,62.0
+457,Female,48.0,61.0,56.0,,,81.0
+458,Female,98.0,,94.0,High School,1.0,61.0
+459,Male,72.0,95.0,42.0,Bachelor,4.0,83.0
+460,Male,71.0,72.0,,Bachelor,5.0,93.0
+461,Female,45.0,97.0,96.0,High School,5.0,86.0
+462,Male,,,38.0,Bachelor,2.0,60.0
+463,Female,67.0,86.0,95.0,,2.0,67.0
+464,Male,40.0,59.0,97.0,Master,5.0,82.0
+465,Female,84.0,58.0,75.0,Associate,,97.0
+466,Male,44.0,74.0,52.0,Associate,4.0,65.0
+467,Female,39.0,91.0,71.0,Bachelor,3.0,81.0
+468,Male,57.0,82.0,98.0,High School,2.0,84.0
+469,Male,44.0,56.0,72.0,High School,3.0,77.0
+470,Female,,98.0,86.0,Bachelor,4.0,76.0
+471,Male,36.0,84.0,62.0,,5.0,71.0
+472,Female,,82.0,61.0,Master,3.0,65.0
+473,Male,74.0,73.0,49.0,Associate,5.0,85.0
+474,Female,36.0,48.0,55.0,Bachelor,5.0,
+475,Male,99.0,65.0,52.0,Bachelor,1.0,67.0
+476,Female,,41.0,81.0,High School,3.0,78.0
+477,Male,,92.0,53.0,,3.0,60.0
+478,Female,43.0,48.0,64.0,Master,,88.0
+479,Male,49.0,48.0,45.0,High School,4.0,94.0
+480,Female,58.0,79.0,,High School,1.0,99.0
+481,Female,72.0,56.0,83.0,High School,5.0,73.0
+482,Female,69.0,40.0,62.0,,2.0,94.0
+483,Male,83.0,64.0,54.0,Master,2.0,79.0
+484,Female,96.0,82.0,66.0,High School,1.0,72.0
+485,Male,,,90.0,Bachelor,,97.0
+486,Female,84.0,81.0,,Master,5.0,67.0
+487,Male,43.0,64.0,52.0,,3.0,79.0
+488,Female,68.0,78.0,64.0,Associate,1.0,92.0
+489,Male,69.0,74.0,83.0,Bachelor,4.0,85.0
+490,Male,35.0,42.0,87.0,Bachelor,3.0,98.0
+491,Female,74.0,89.0,89.0,Master,2.0,80.0
+492,Male,98.0,76.0,44.0,Associate,2.0,68.0
+493,Male,56.0,83.0,40.0,Associate,3.0,83.0
+494,Female,94.0,83.0,66.0,Associate,1.0,96.0
+495,Male,,90.0,81.0,Associate,2.0,76.0
+496,Male,45.0,69.0,90.0,Associate,5.0,83.0
+497,Male,48.0,77.0,61.0,High School,3.0,
+498,Female,94.0,73.0,97.0,Bachelor,,98.0
+499,Male,64.0,51.0,,High School,2.0,98.0
+500,Female,69.0,58.0,40.0,Associate,1.0,72.0
