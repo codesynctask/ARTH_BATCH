@@ -1,96 +1,111 @@
-// Elemnts selection
-const toDoCont = document.querySelector("ul")
-const createTodoBtn = document.querySelector("button")
-const taskNameInput = document.querySelector("input")
-const todoData = JSON.parse(localStorage.getItem("todoData")) ?? [];
+// Elements selection
+const toDoCont = document.querySelector("ul");
+const createTodoBtn = document.querySelector("button");
+const taskNameInput = document.querySelector("input");
 
+let todoData = JSON.parse(localStorage.getItem("todoData")) ?? [];
 
-// const tempTodoData = [
-    // {
-    //     "name":"learn JS DOM",
-    //     "status":false
-    // },
-//     {
-//         "name":"learn Python OOPs",
-//         "status":true
-//     },
-//     {
-//         "name":"learn IoT",
-//         "status":false
-//     },
+// CREATE TODO UI 
+function createTodoElement(todo, index) {
+    let li = document.createElement("li");
+    li.setAttribute(
+        "class",
+        "flex justify-between item-center  p-4 rounded-md shadow-md"
+    );
 
-// ]
-// localStorage.setItem("todoData",JSON.stringify(tempTodoData));
-// console.log(todoData[1]);
+    li.innerHTML = `
+        <div class="flex justify-center items-center gap-4">
+            <i class="${
+                todo.status
+                    ? "ri-checkbox-circle-line"
+                    : "ri-checkbox-blank-circle-line"
+            } text-2xl cursor-pointer"></i>
 
+            <input type="text" value="${todo.name}" 
+                class="outline-none bg-transparent"
+                readonly
+                style="text-decoration:${todo.status ? "line-through" : "none"}"
+            />
+        </div>
 
+        <div class="flex gap-4">
+            <i id="edit" class="ri-edit-line cursor-pointer"></i>
+            <i id="delete" class="ri-delete-bin-line cursor-pointer"></i>
+        </div>
+    `;
 
-// todoData.forEach(todo => {
-//     console.log(todo["status"])
-// });
+    // Elements inside li 
+    const checkIcon = li.querySelector("i");
+    const editBtn = li.querySelector("#edit");
+    const deleteBtn = li.querySelector("#delete");
+    const input = li.querySelector("input");
 
+    // COMPLETE TASK 
+    checkIcon.addEventListener("click", () => {
+        todo.status = !todo.status;
 
+        checkIcon.className = todo.status
+            ? "ri-checkbox-circle-line text-2xl cursor-pointer"
+            : "ri-checkbox-blank-circle-line text-2xl cursor-pointer";
 
+        input.style.textDecoration = todo.status ? "line-through" : "none";
 
+        updateLocalStorage();
+    });
 
-createTodoBtn.addEventListener("click",()=>{
-    if(taskNameInput.value === ""){
-        return
-    }
-    let liElm = document.createElement("li")
-    liElm.innerText = taskNameInput.value
-    liElm.setAttribute("class","flex justify-between item-center w-[80vw] m-auto p-4 rounded-md shadow-md")
-    
-    toDoCont.append(liElm)
+    // EDIT TASK
+    editBtn.addEventListener("click", () => {
+        input.readOnly = false;
+        input.focus();
+        input.style.border = "1px solid black";
 
-    taskNameInput.value = ""
-})
+        input.addEventListener("blur", () => {
+            input.readOnly = true;
+            input.style.border = "none";
+            todo.name = input.value;
+            updateLocalStorage();
+        });
+    });
 
+    // DELETE TASK 
+    deleteBtn.addEventListener("click", () => {
+        todoData.splice(index, 1);
+        updateLocalStorage();
+        renderTodos();
+    });
 
-
-function saveTodoData(data){
-    todoData.push(data)
-    // console.log(todoData)
-
-    localStorage.setItem("todoData",JSON.stringify(todoData));
+    return li;
 }
 
-saveTodoData({
-    "name":"complete Todo app",
-    "status":false
-})
+// RENDER TODOS 
+function renderTodos() {
+    toDoCont.innerHTML = "";
+    todoData.forEach((todo, index) => {
+        const li = createTodoElement(todo, index);
+        toDoCont.appendChild(li);
+    });
+}
 
+// SAVE 
+function updateLocalStorage() {
+    localStorage.setItem("todoData", JSON.stringify(todoData));
+}
 
+// ADD NEW TODO 
+createTodoBtn.addEventListener("click", () => {
+    if (taskNameInput.value.trim() === "") return;
 
-// making tasks working(complte , edit , delete)
-const li = document.querySelector("li")
-const liCompleIcon = li.querySelector("i")
-const liEdit = li.querySelector("#edit")
-const liDelete = li.querySelector("#delete")
+    const newTodo = {
+        name: taskNameInput.value,
+        status: false,
+    };
 
+    todoData.push(newTodo);
+    updateLocalStorage();
+    renderTodos();
 
-// checking the task
-liCompleIcon.addEventListener("click",function () {
-    if (this.getAttribute("class") == "ri-checkbox-circle-line text-2xl") {
-        this.setAttribute("class","ri-checkbox-blank-circle-line text-2xl")
-        li.querySelector("input").style.textDecoration="none"
-    }else{
-        // change icon type
-        this.setAttribute("class","ri-checkbox-circle-line text-2xl")
+    taskNameInput.value = "";
+});
 
-        // make task name appreared as cut through
-        li.querySelector("input").style.textDecoration="line-through"
-    }
-    
-})
-
-
-liEdit.addEventListener("click",function(){
-    li.querySelector("input").readOnly=false
-    li.querySelector("input").style.border="2px solid black"
-    
-})
-liDelete.addEventListener("click",function(){
-    li.remove()
-    
-})
+// INITIAL LOAD 
+renderTodos();
