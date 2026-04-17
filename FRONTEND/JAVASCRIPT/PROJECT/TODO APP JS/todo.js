@@ -58,6 +58,7 @@ function createTodoElement(todo, index) {
         input.readOnly = false;
         input.focus();
         input.style.border = "1px solid black";
+        input.style.padding = "5px";
 
         input.addEventListener("blur", () => {
             input.readOnly = true;

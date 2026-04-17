@@ -1,0 +1,23 @@
+p{
+    background-color: red;
+    height: 100px;/* ✅  */
+    width: 200px; /* ✅  */
+    border: 5px solid black;/* ✅  */
+    padding: 10px;/* ✅  */
+    margin: 30px;/* ✅  */
+    
+}
+span{
+    /* height and width are calculated based on content size : default in inline level element */
+    background-color: red;
+    height: 100px;  /* ❌  */
+    width: 200px;   /* ❌ */
+    border: 5px solid black;/* ✅  */
+    padding: 10px;  /* ✅  */
+    margin: 30px;   /* ✅  */
+
+    display: block;
+}
+
+
+url(c:/Users/deepa/AppData/Local/Packages/MicrosoftWindows.Client.Core_cw5n1h2txyewy/TempState/ScreenClip/{613F1729-AD8F-47F9-9056-CD052DC70535\}.png)
