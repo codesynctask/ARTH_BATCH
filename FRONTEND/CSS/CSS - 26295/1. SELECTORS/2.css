@@ -1,0 +1,66 @@
+/* reset css code */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    background-color: #100f0f;
+}
+.cont{
+    background-color: rgb(255, 250, 250);
+    width: 330px;
+    margin: 20px auto;
+    height: 90vh;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+}
+
+.profile-nav{
+    height: 10%;
+}
+
+.profile-details{
+    height: 50%;
+}
+.posts{
+    height: 40%;
+    width: 100%;
+
+}
+.pictures{
+    width: 100%;
+    height: 100%;
+}
+
+.pictures img{
+    width: 45%;
+}
+
+
+.stats > *{
+    display: inline-block;
+    border: 2px solid black;
+    height: 100%;
+}
+
+
+.stats img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.details{
+    padding: 0 40px;
+}
+
+center button{
+    padding: 5px 20px;
+    margin: 10px 0;
+
+}
