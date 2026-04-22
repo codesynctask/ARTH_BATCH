@@ -1,0 +1,56 @@
+employee_id,name,department,salary,hire_date,email,phone,status
+001,John Doe,Sales,75000,2020-01-15,john.doe@company.com,555-0101,Active
+002,Jane Smith,Marketing,,2019-03-22,jane.smith@company.com,555-0102,active
+003,Bob Johnson,Sales,65000,2021/07/10,bob.johnson@company.com,,Active
+004,,IT,82000,2018-11-05,mike.wilson@company.com,555-0104,Active
+005,Sarah Davis,HR,58000,2022-02-28,sarah.davis@company.com,555-0105,ACTIVE
+006,Tom Brown,Sales,  72000  ,2020-09-14,tom.brown@company.com,555-0106,Inactive
+007,Emily White,Marketing,69000,2021-05-20,,5550107,Active
+008,Chris Green,IT,,2019-08-17,chris.green@company.com,555-0108,active
+009,Lisa Anderson,Sales,76000,Invalid Date,lisa.anderson@company.com,555-0109,Active
+010,David Lee,HR,61000,2020-12-03,david.lee@company.com,555-0110,Active
+011,Anna Martinez,Marketing,71000,2021-01-25,anna.martinez@company.com,,ACTIVE
+012,James Taylor,IT,85000,2018-06-12,james.taylor@company.com,555-0112,Active
+013,Maria Garcia,Sales,68000,2022-04-08,maria.garcia@company.com,555-0113,active
+014,Robert Thomas,HR,,2019-10-30,robert.thomas@company.com,555-0114,Active
+015,Jennifer Moore,Marketing,73000,2020-07-19,jennifer.moore@company.com,555-0115,Inactive
+016,Michael Jackson,Sales,  79000,2021-11-22,michael.jackson@company.com,,Active
+017,,IT,88000,2018-03-15,patricia.martin@company.com,555-0117,ACTIVE
+018,Daniel Rodriguez,Sales,67000,2022/01/10,daniel.rodriguez@company.com,555-0118,active
+019,Nancy Lewis,HR,59000,2020-05-07,nancy.lewis@company.com,555-0119,Active
+020,Paul Walker,Marketing,,2019-12-14,paul.walker@company.com,555-0120,Active
+021,Laura Hall,Sales,74000,2021-08-03,laura.hall@company.com,5550121,ACTIVE
+022,Kevin Allen,IT,86000,2018-09-28,kevin.allen@company.com,555-0122,active
+023,Sandra Young,Marketing,70000,,sandra.young@company.com,555-0123,Active
+024,Steven King,Sales,77000,2020-02-16,steven.king@company.com,,Inactive
+025,Betty Wright,HR,60000,2021-06-11,betty.wright@company.com,555-0125,Active
+026,Edward Lopez,IT,  83000  ,2019-04-25,edward.lopez@company.com,555-0126,ACTIVE
+027,Dorothy Hill,Sales,,2022-03-07,dorothy.hill@company.com,555-0127,active
+028,,Marketing,72000,2020-10-19,donna.scott@company.com,555-0128,Active
+029,George Green,HR,62000,2021-02-14,george.green@company.com,,Active
+030,Carol Adams,Sales,75000,2019-07-29,carol.adams@company.com,555-0130,ACTIVE
+031,Frank Baker,IT,87000,2018-12-06,frank.baker@company.com,555-0131,Inactive
+032,Helen Gonzalez,Marketing,  71000,2021-09-18,helen.gonzalez@company.com,555-0132,active
+033,Larry Nelson,Sales,66000,Invalid,larry.nelson@company.com,,Active
+034,Sharon Carter,HR,58000,2020-04-23,sharon.carter@company.com,555-0134,Active
+035,Joe Mitchell,IT,,2019-11-08,joe.mitchell@company.com,555-0135,ACTIVE
+036,Michelle Perez,Marketing,73000,2022/05/12,michelle.perez@company.com,5550136,active
+037,Raymond Roberts,Sales,78000,2020-08-26,raymond.roberts@company.com,555-0137,Active
+038,,HR,61000,2021-03-31,cynthia.turner@company.com,555-0138,Active
+039,Gary Phillips,Sales,  76000  ,2019-01-17,gary.phillips@company.com,,ACTIVE
+040,Deborah Campbell,IT,84000,2018-05-22,deborah.campbell@company.com,555-0140,Inactive
+041,Jose Parker,Marketing,69000,,jose.parker@company.com,555-0141,active
+042,Ruth Evans,Sales,67000,2021-10-05,ruth.evans@company.com,555-0142,Active
+043,Eric Edwards,HR,,2020-06-13,eric.edwards@company.com,5550143,Active
+044,Brenda Collins,IT,89000,2019-02-27,brenda.collins@company.com,555-0144,ACTIVE
+045,Jeffrey Stewart,Sales,74000,2022-02-09,jeffrey.stewart@company.com,555-0145,active
+046,Catherine Sanchez,Marketing,  70000,2021-07-24,catherine.sanchez@company.com,,Active
+047,,Sales,75000,Invalid Date,ryan.morris@company.com,555-0147,Active
+048,Shirley Rogers,HR,59000,2020-03-18,shirley.rogers@company.com,555-0148,ACTIVE
+049,Gregory Reed,IT,85000,2019-09-02,gregory.reed@company.com,5550149,Inactive
+050,Amy Cook,Marketing,,2021-12-16,amy.cook@company.com,555-0150,active
+051,Jerry Morgan,Sales,78000,2018-08-21,jerry.morgan@company.com,555-0151,Active
+052,Virginia Bell,HR,62000,2022/06/05,virginia.bell@company.com,,Active
+053,Dennis Murphy,IT,  88000  ,2020-01-29,dennis.murphy@company.com,555-0153,ACTIVE
+054,Kathleen Bailey,Marketing,71000,2021-04-14,kathleen.bailey@company.com,555-0154,active
+055,Patrick Rivera,Sales,69000,,patrick.rivera@company.com,5550155,Active
