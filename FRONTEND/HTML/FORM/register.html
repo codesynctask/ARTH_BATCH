@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center><u>Register to our website</u></center></h1>
+
+    <form>
+        <!-- Personal info -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name : </label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your first name "><br>
+
+            <label for="lname">Last Name : </label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name "><br>
+
+            <label for="age">Age : </label>
+            <input type="number" name="age" id="age" placeholder="Enter your last name " max="100" min="0" minlength="2"><br>
+
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" placeholder="Enter your last name "><br><br>
+
+            <label>Gender : </label><br>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">female</label>
+
+            <input type="radio" name="gender" value="others" id="others">
+            <label for="others">others</label>
+            <br><br>
+
+            <label for="phone">Phone Number : </label>
+            <select name="phone-code" id="phone-code">
+                <option selected value="IND">+91</option>
+                <option value="PAK">+92</option>
+                <option value="USA">+01</option>
+            </select>
+            <input type="tel" name="phone" id="phone" placeholder="xxxxx " min="1000000000" max="9999999999"><br>
+
+            <label for="dob">Date of Birth : </label>
+            <input type="date" name="dob" id="dob" ><br>
+
+
+        </fieldset><br>
+
+        <!-- Address -->
+        <fieldset>
+            <legend>Address</legend>
+        </fieldset><br>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+        </fieldset>
+
+        <br><br>
+        
+        <center><button>Register now</button></center>
+    </form>
+</body>
+</html>
