@@ -2,52 +2,49 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
+
+
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 100vh;
-    gap: 20px;
-    background-color: #e2dede;
-    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/03/nezuko-glowing-eyes-demon-slayer-gif-desktop-wallpaper-preview.gif);
-    color: white;
-    background-size: contain;
-    background-position: center center;
 }
 
 .cont{
-    height: 200px;
-    width: 400px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 2px 2px 10px black;
-    position: relative;
+    border: 2px solid black;
+    height: 350px;
+    margin-top: 20px;
     overflow: hidden;
 }
 
-button{
-    padding: 5px 10px;
-    width: 80px;
-    text-transform: capitalize;
-    cursor: pointer;
 
-}
 
-.slides{
-    height: 100%;
-    width: 400px;
+.btn-cont{
+    margin: auto;
+    width: 200px;
     display: flex;
-    position: absolute;
-    left: 0px;
-    transition: 0.3s left ease-in;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    
 }
-img{
+
+
+.btn-cont button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+}
+.slider{
     height: 100%;
-    width: 400px;
-    flex-shrink: 0;
-    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(15 , 18vw);
+    grid-template-rows: 350px;
+    gap: 20px; 
+}
+
+.slider img{
+    height: 350px;
+    width: 18vw;
+    border: 2px solid black;
 }
