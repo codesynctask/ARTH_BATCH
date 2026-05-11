@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #111;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+
+
+/* BOX ANIMATION */
+.cont{
+    margin-top: 10px;
+
+    /* border: 2px dashed; */
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    position: relative;
+    left: 0px;
+    transition: 0.8s left ease-in;
+}
+
+.cont:hover .box{
+    left: calc(100% - 100px);
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 0px;
+    transition: 0.8s left ease-in-out;
+
+    animation-name: move-circle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move-circle {
+    0%{
+        left: 0px;
+    }100%{
+        left: calc(100% - 100px);
+    }
+}
