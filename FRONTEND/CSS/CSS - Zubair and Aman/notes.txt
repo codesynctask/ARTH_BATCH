@@ -1,0 +1,57 @@
+# WHERE TO WRITE CSS?
+1. Inline   <element style="....."></element>
+2. Internal <head><style>.......</style></head>
+3. External <head><link href="file.css"></head>
+
+
+# FLOW OF WRITING CSS
+1. Select the target element
+2. Apply the design
+
+
+# SYNTAX OF APPLYING CSS CODE
+color: red;
+
+color --> Property
+Red   --> Value
+
+# SYNTAX OF SELECTING HTML element
+element{
+
+}
+
+
+CSS full forma?
+
+
+
+------------------------ BOX MODEL--------------
+Content --> Height , Width
+    - It is the size of content
+
+Border (width , color , type)
+    - it is the surrounding of Padding
+
+Padding (left , right , bottom , top)
+    - space between content and border
+
+Margin (left , right , bottom , top)
+    - space after border
+
+
+
+
+# INLINE V/S BLOCK
+Block Level element
+    Height✅
+    Width✅
+    Margin✅
+    Padding✅
+    Border✅
+
+Inline Level element
+    Height❌
+    Width❌
+    Margin❌
+    Padding✅
+    Border✅

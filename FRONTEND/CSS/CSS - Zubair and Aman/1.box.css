@@ -1,0 +1,17 @@
+.box{
+    border: 20px solid black;
+    background-color: rgb(252, 239, 239);
+    /* padding: 10px 60px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 60px; */
+    
+    padding: 50px;
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+
+    display: block;
+
+}
